@@ -8,8 +8,6 @@ Projekt byl řešen pomocí dvou knihoven:
 - pandas
 - polars
 
----
-
 ## Postup řešení
 
 ### 1. Načtení dat
@@ -37,8 +35,6 @@ Byly provedeny následující analýzy:
 - nalezení nejlepších podmínek
 - detekce anomálií
 
----
-
 ## Odpovědi na otázky
 
 ### Jaké chyby dataset obsahoval?
@@ -48,34 +44,24 @@ Byly provedeny následující analýzy:
 - nesmyslné hodnoty (např. záporné hodnoty, úhel větší než 90°)
 - nekonzistentní text (např. "suny", mezery)
 
----
-
 ### Jsou hodnoty power_calc a power_w stejné?
 Ne vždy. Hodnoty se mohou lišit kvůli:
 - zaokrouhlování
 - nepřesnosti měření
 - chybám senzorů
 
----
-
 ### Jak úhel ovlivňuje výkon?
 S rostoucím úhlem výkon klesá. Nejvyšší výkon je při malém úhlu (panel je kolmo ke zdroji světla).
 
 Ano, tento výsledek dává fyzikální smysl, protože při větším úhlu dopadá méně světla na panel.
-
----
 
 ### Jak silná je závislost mezi lux a výkonem?
 Závislost je silná a kladná. Čím větší intenzita světla (lux), tím větší výkon panelu.
 
 Závislost je přibližně lineární, ale může být ovlivněna reálnými podmínkami.
 
----
-
 ### Kde panel funguje lépe?
 Panel funguje lépe venku (outdoor), protože sluneční světlo má vyšší intenzitu než umělé osvětlení v interiéru.
-
----
 
 ### Jaké jsou nejlepší podmínky?
 - vysoká intenzita světla (lux)
@@ -83,16 +69,12 @@ Panel funguje lépe venku (outdoor), protože sluneční světlo má vyšší in
 - venkovní prostředí
 - kvalitní panel
 
----
-
 ### Jsou extrémní hodnoty chyby nebo zajímavý jev?
 Extrémní hodnoty mohou být:
 - chyba měření
 - nebo výjimečné podmínky (např. velmi silné světlo)
 
 Je nutné je posoudit individuálně.
-
----
 
 ## Vlastní analýza
 
@@ -106,8 +88,6 @@ Postup:
 Výsledek:
 I při vysoké intenzitě světla výkon klesá s rostoucím úhlem.
 
----
-
 ## Porovnání pandas vs polars
 
 ### pandas
@@ -119,8 +99,6 @@ Výhody:
 Nevýhody:
 - pomalejší při práci s velkými daty
 
----
-
 ### polars
 Výhody:
 - velmi rychlý
@@ -130,8 +108,6 @@ Výhody:
 Nevýhody:
 - složitější na pochopení
 - méně rozšířený než pandas
-
----
 
 ## Shrnutí
 
